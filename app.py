@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pickle
-import scikit-learn
 symptom_mapping = {
     "acidity": 0,
     "indigestion": 1,
