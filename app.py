@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pickle
-
 symptom_mapping = {
     "acidity": 0,
     "indigestion": 1,
@@ -148,7 +147,7 @@ def main():
     
     st.markdown('<h1 style="color:black;">AYURVEDIC AGENCY</h1>', unsafe_allow_html=True)
 
-    Gender = st.radio(":violet[Select Your Gender]", ["MALE", "FEMALE"])
+    Gender = st.radio(":black[SELECT YOUR GENDER:]", [":black[MALE]", ":black[FEMALE]"])
 
     Age = st.number_input("",placeholder="Enter Your Age",min_value=0,max_value=100)
 
@@ -288,7 +287,7 @@ def main():
         ],index=None,placeholder="Select Fourth Symptom",
     )
 
-    Severity = st.radio("Select Severity of the Symptoms:", ["LOW", "NORMAL", "HIGH"])
+    Severity = st.radio(":black[SELECT SEVERITY OF THE SYMPTOMS:]", [":green[LOW]", ":blue[NORMAL]", ":red[HIGH]"])
 
     if st.button("Submit"):
         with st.container(border=True):
