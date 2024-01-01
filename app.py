@@ -99,8 +99,8 @@ def serviceValidation(selected_symptoms):
 
 def Convert(selectedOptions):
     d = {"diarrhea": 1, "gastritis": 2, "arthritis": 3, "migraine": 4}
-    g = {"[MALE]": 1, "[FEMALE]": 2}
-    s = {"[LOW]": 1, "[NORMAL]": 2, "[HIGH]": 3}
+    g = {":black[MALE]": 1, ":black[FEMALE]": 2}
+    s = {":green[LOW]": 1, ":blue[NORMAL]": 2, ":red[HIGH]": 3}
     result = [
         d[selectedOptions[0]],
         selectedOptions[1],
